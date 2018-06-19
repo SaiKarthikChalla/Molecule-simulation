@@ -44,4 +44,3 @@ plt.plot(bond_lengths, hf_energies, 'o-')
 plt.ylabel('Energy in Hartree')
 plt.xlabel('Bond length in angstrom')
 plt.show()
-
