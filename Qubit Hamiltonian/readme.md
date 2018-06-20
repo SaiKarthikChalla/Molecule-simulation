@@ -1,0 +1,7 @@
+After the classical calculcations have been done, the problem remains provide a map between electronic structure problems and qubit based quantum computers. The classically calculated Hamiltonian which is in second quantized representation needs to be mapped to qubit representation. This mapping is taken by certain transformations. Currently, most common ones are availaible in OpenFermion which are Jordan Wigner, Bravyi-Kitaev (BK) and Bravyi-Kitaev super fast (BKSF) transformations.  Each of these has different properties with regard to the Hamiltonians that are produced, which may offer benefits to different types of algorithms or experiments. OpenFermion attempts to remain agnostic to the particular transformation preferred by the user.
+
+Methods have provided in OpenFermion to obtain the eigen values of the qubit hamiltonian. The lowest eigen value corresponds to the ground state energy. However these energy values have been calculated classically.
+
+OpenFermion's core work is to produce the Qubit Operators pertaining to a certain problem. These operators are input for a number of quantum algorithms that then translate to quantum circuits. Currently, plugins are supported for the ProjectQ framework and the Rigetti Forest framework. 
+
+Now we'll create a quantum circuit that is designed to prepare a unitary coupled cluster wavefunction on 4 qubits in the Jordan Wigner encoding. 
