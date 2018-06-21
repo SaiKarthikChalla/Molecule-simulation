@@ -5,3 +5,23 @@ Methods have provided in OpenFermion to obtain the eigen values of the qubit ham
 OpenFermion's core work is to produce the Qubit Operators pertaining to a certain problem. These operators are input for a number of quantum algorithms that then translate to quantum circuits. Currently, plugins are supported for the ProjectQ framework and the Rigetti Forest framework. 
 
 Now we'll create a quantum circuit that is designed to prepare a unitary coupled cluster wavefunction on 4 qubits in the Jordan Wigner encoding. 
+
+The quantum circuit we generate corresponds to the first-order Trotter evolution corresponding for t = 0.1s for a hydrogen molecule.
+
+The quantum circuit looks as follows where the first few lines have been truncated.
+
+H 0
+H 1
+RX(pi/2) 2
+RX(pi/2) 3
+CNOT 0 1
+CNOT 1 2
+CNOT 2 3
+RZ(-0.009839529174273519) 3
+CNOT 2 3
+CNOT 1 2
+CNOT 0 1
+H 0
+H 1
+....................
+
