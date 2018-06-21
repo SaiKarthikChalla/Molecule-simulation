@@ -25,3 +25,8 @@ H 0
 H 1
 ....................
 
+Python libraries needed to run the files:
+openfermionpyscf
+pyscf
+forestopenfermion
+pyquil
