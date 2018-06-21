@@ -26,7 +26,9 @@ H 1
 ....................
 
 Python libraries needed to run the files:
-openfermionpyscf
-pyscf
-forestopenfermion
-pyquil
+1. openfermionpyscf
+2. pyscf
+3. forestopenfermion
+4. pyquil
+
+Here we connect to the Riggeti's Quantum virtual machine to execute the quantum circuit obtained in the Qubit Hamiltonian directory. To get access to the Riggeti's quantum framework we need to obtain a api key by registering to it's website. In the example create a quantum virtual machine connection and run our circuit on the qubits to obtain the wavefunction of the qubit.
